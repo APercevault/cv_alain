@@ -1,0 +1,7 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+CV_Alain:
+    path:       /CV_Alain
+    controller: App\Controller\MainController::index

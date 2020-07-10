@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Alain Percevault : CV Développeur</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+		<link rel="stylesheet" href="assets/css/main.css"/>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
+	</head>
+
+	<body
+		class="is-preload">
+
+		<!-- Header -->
+		<header id="header">
+
+			<h1>Alain Percevault</h1>
+			<nav>
+				<ul>
+					<li><a href="#intro">À propos</a></li>
+					<li><a href="#one">Expériences</a></li>
+					<li><a href="#two">Formations</a></li>
+					<li><a href="#work">Compétences</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Intro -->
+		<section id="intro" class="main style1 dark fullscreen">
+			<div class="content">
+				<header>
+					<h2>À propos</h2>
+				</header>
+				<p>
+					Je suis Alain Percevault, développeur web et web mobile agé de
+					<SCRIPT language="JavaScript">
+						var now = new Date();
+var birth = 1995;
+var year = now.getFullYear() - birth;
+document.write(year);
+					</SCRIPT>
+					ans. Actuellement je suis en formation chez
+					{{formation}}
+					et suis à la recherche d'opportunités. Je suis depuis toujours passionné par l’outil informatique, souvent en recherche sur mon ordinateur et en veille technologique.
+				</p>
+
+				<footer>
+					<a href="#one" class="button style2 down">More</a>
+				</footer>
+			</div>
+		</section>
+
+		<!-- One -->
+		<section id="one" class="main style2 right dark fullscreen">
+			<div class="content box style2">
+				<header>
+					<h2>Expériences</h2>
+				</header>
+				{% for key,value in experience %}
+					<p>
+						<strong>{{ value.date }}<br/>
+							{{ value.name }}</strong>
+					</p>
+					<p>
+						<span class="taillePolice">{{ value.content }}</span>
+					</p>
+				{% endfor %}
+			</div>
+			<a href="#two" class="button style2 down anchored">Next</a>
+		</section>
+
+		<!-- Two -->
+		<section id="two" class="main style2 left dark fullscreen">
+			<div class="content box style2">
+				<header>
+					<h2>Formations</h2>
+				</header>
+				{% for key,value in formations %}
+					<p>
+						<strong>{{ value.date }}<br/>
+							{{ value.name }}</strong><br/>
+						<span class="taillePolice">{{ value.content }}</span>
+					</p>
+
+
+				{% endfor %}
+			</div>
+			<a href="#work" class="button style2 down anchored">Next</a>
+		</section>
+
+		<!-- Compétences -->
+		<section id="work" class="main style3 primary">
+			<div class="content">
+				<header>
+					<h2>Compétences</h2>
+				</header>
+
+				<!-- Gallery  -->
+				<div class="gallery">
+					<article class="from-left">
+						<a class="image fit tailleLogo"><img src="images/Logo/logo-php.png" title="The Anonymous Red" alt=""/></a>
+					</article>
+					<article class="from-right">
+						<a class="image fit tailleLogo"><img src="images/Logo/logo-symfony.png" title="Airchitecture II" alt=""/></a>
+					</article>
+					<article class="from-left">
+						<a class="image fit tailleLogo"><img src="images/Logo/logo-javascript.png" title="Air Lounge" alt=""/></a>
+					</article>
+					<article class="from-right">
+						<a class="image fit tailleLogo"><img src="images/Logo/logo-angular.png" title="Carry on" alt=""/></a>
+					</article>
+					<article class="from-left">
+						<a class="image fit tailleLogo"><img src="images/Logo/logo-MySQL.png" title="The sparkling shell" alt=""/></a>
+					</article>
+					<article class="from-right">
+						<a class="image fit tailleLogo"><img src="images/Logo/logo-Node.js.png" title="Bent IX" alt=""/></a>
+					</article>
+					<article class="from-left">
+						<a class="image fit tailleLogo"><img src="images/Logo/logo-agile-scrum.png" title="The sparkling shell" alt=""/></a>
+					</article>
+					<article class="from-right">
+						<a class="image fit tailleLogo"><img src="images/Logo/logo-doctrine.png" title="Bent IX" alt=""/></a>
+					</article>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- Contact -->
+		<section id="contact" class="main style3 secondary">
+			<div class="content">
+				<header>
+					<h2>Contact</h2>
+				</header>
+				<div class="box">
+					<form method="post" action="#">
+						<div class="fields">
+							<div class="field half"><input type="text" name="name" placeholder="Nom..."/></div>
+							<div class="field half"><input type="email" name="email" placeholder="Email..."/></div>
+							<div class="field">
+								<textarea name="message" placeholder="Message..." rows="6"></textarea>
+							</div>
+						</div>
+						<ul class="actions special">
+							<li><input type="submit" value="Envoyer un message"/></li>
+						</ul>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer
+			id="footer">
+
+			<!-- Icons -->
+			<ul class="icons">
+				<li>
+					<a href="https://www.linkedin.com/in/alain-percevault-a4a72912a" class="icon brands fa-linkedin-in">
+						<span class="label">LinkedIn</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/Chmout" class="icon brands fa-github">
+						<span class="label">GitHub</span>
+					</a>
+				</li>
+			</ul>
+
+			<!-- Menu -->
+			<ul class="menu">
+				<li>Curiculum Vitae &copy; Alain Percevault</li>
+			</ul>
+
+		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+
+</html>
